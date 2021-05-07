@@ -17,40 +17,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mZo-4t-UtJ">
-                                <rect key="frame" x="96" y="220" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mZo-4t-UtJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="l5H-vF-iSx">
-                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="itemSize" width="183" height="129"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="tur-Bz-nws">
-                                        <rect key="frame" x="56" y="0.0" width="128" height="128"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="tur-Bz-nws" customClass="PhotoCell" customModule="ImageHub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="183" height="129"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Nsh-07-7bc">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="183" height="129"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vYP-yU-7iK">
-                                                    <rect key="frame" x="-56" y="0.0" width="240" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vYP-yU-7iK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="183" height="129"/>
                                                 </imageView>
                                                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Ubd-NR-tR2">
                                                     <rect key="frame" x="54" y="54" width="20" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </activityIndicatorView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="vYP-yU-7iK" secondAttribute="trailing" id="e0T-r5-Vje"/>
+                                                <constraint firstItem="vYP-yU-7iK" firstAttribute="top" secondItem="Nsh-07-7bc" secondAttribute="top" id="elK-z5-vPA"/>
+                                                <constraint firstAttribute="bottom" secondItem="vYP-yU-7iK" secondAttribute="bottom" id="iuq-24-XUq"/>
+                                                <constraint firstItem="vYP-yU-7iK" firstAttribute="leading" secondItem="Nsh-07-7bc" secondAttribute="leading" id="sq7-UN-uui"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="183" height="129"/>
+                                        <connections>
+                                            <outlet property="activityIndicator" destination="Ubd-NR-tR2" id="uJ2-7e-xAO"/>
+                                            <outlet property="imageView" destination="vYP-yU-7iK" id="0ac-CE-QD3"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mZo-4t-UtJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="83" id="KK1-CK-rXw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="mZo-4t-UtJ" secondAttribute="top" constant="88" id="ffn-Yy-oKf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mZo-4t-UtJ" secondAttribute="trailing" id="kN9-mh-awV"/>
+                            <constraint firstItem="mZo-4t-UtJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x4k-SF-GBK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ImageHub" id="mev-aI-21u"/>
                     <connections>
@@ -69,14 +84,23 @@
                     <view key="view" contentMode="scaleToFill" id="ShH-tJ-wB1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RpL-fA-fTx">
+                                <rect key="frame" x="33" y="153" width="345" height="587"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dGK-XG-phQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="YRm-m7-b49"/>
+                    <connections>
+                        <outlet property="imageView" destination="RpL-fA-fTx" id="Ah1-Q7-okV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VHv-VF-fal" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1733" y="88"/>
+            <point key="canvasLocation" x="1731.8840579710147" y="87.723214285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eLD-7o-Y6r">

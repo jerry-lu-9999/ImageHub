@@ -10,4 +10,19 @@ import UIKit
 
 class DetailVC : ViewController{
     
+    @IBOutlet weak var imageView: UIImageView!
+    
+    var imageTitle: String? {
+        willSet{
+            navigationItem.title = newValue
+        }
+    }
+    
+    var image : UIImage?{
+        willSet {
+            OperationQueue.main.addOperation {
+                self.imageView?.image = newValue
+            }
+        }
+    }
 }
