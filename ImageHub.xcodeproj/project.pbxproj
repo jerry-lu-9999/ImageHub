@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F5100A5826461BD4002B4F17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F5100A5826461BD4002B4F17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ImageHub/README.md; sourceTree = "<group>"; };
 		F562B4DC2644DD0300C3D301 /* ImageHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F562B4DF2644DD0300C3D301 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F562B4E12644DD0300C3D301 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +88,7 @@
 		F562B4D32644DD0300C3D301 = {
 			isa = PBXGroup;
 			children = (
+				F5100A5826461BD4002B4F17 /* README.md */,
 				F562B4DE2644DD0300C3D301 /* ImageHub */,
 				F562B4F82644DD0700C3D301 /* ImageHubTests */,
 				F562B5032644DD0700C3D301 /* ImageHubUITests */,
@@ -110,7 +111,6 @@
 			children = (
 				F562B4ED2644DD0600C3D301 /* LaunchScreen.storyboard */,
 				F562B4E52644DD0300C3D301 /* Main.storyboard */,
-				F5100A5826461BD4002B4F17 /* README.md */,
 				F562B4F02644DD0600C3D301 /* Info.plist */,
 				F562B5192645E02F00C3D301 /* SupportingFiles */,
 				F562B5182645E01A00C3D301 /* Model */,
