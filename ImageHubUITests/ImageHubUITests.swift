@@ -9,17 +9,31 @@ import XCTest
 
 class ImageHubUITests: XCTestCase {
 
+    var app: XCUIApplication!
+    
+    // MARK: -XCTestCase
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-
+        super.setUp()
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
+        app = XCUIApplication()
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        app.launchArguments.append("--UITesting")
     }
 
+    //  MARK: - Tests
     override func tearDownWithError() throws {
+        app.launch()
+        
+        XCTAssertTrue(app.isDisplayingMainView)
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        print(app.buttons)
+        app.buttons["Gallery"].tap()
+
+        XCTAssertTrue(app.isDisplayingMainView)
     }
 
     func testExample() throws {
@@ -38,5 +52,11 @@ class ImageHubUITests: XCTestCase {
                 XCUIApplication().launch()
             }
         }
+    }
+}
+
+extension XCUIApplication{
+    var isDisplayingMainView: Bool {
+        return otherElements["mainView"].exists
     }
 }

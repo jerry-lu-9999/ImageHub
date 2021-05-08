@@ -21,7 +21,7 @@ The current app support displaying and searching the images by their title from 
 
 ## Build and Deployment Target
 
-This project is built in Xcode 12.5, tested on iPhone 12 Simulator running iOS 14.5
+This project is built in Xcode 12.5, tested on iPhone 12 Simulator running iOS 14.5 with UITest written
 
 ## How to run
 

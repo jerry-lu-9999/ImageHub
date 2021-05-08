@@ -14,6 +14,8 @@ let kMaxPadding: CGFloat = 32
 class MainVC : UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     @IBOutlet var libraryCV: UICollectionView!
+    @IBOutlet var camera: UIBarButtonItem!
+    @IBOutlet var gallery: UIBarButtonItem!
     
     let searchController = UISearchController(searchResultsController: nil)
     var filteredItem = [Item]()
@@ -40,6 +42,14 @@ class MainVC : UIViewController, UICollectionViewDataSource, UICollectionViewDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.accessibilityIdentifier = "mainView"
+        
+        //for UI testing purposes
+        camera.isAccessibilityElement = true
+        camera.accessibilityIdentifier = "Camera"
+        gallery.isAccessibilityElement = true
+        gallery.accessibilityIdentifier = "Gallery"
         
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -169,6 +179,7 @@ class MainVC : UIViewController, UICollectionViewDataSource, UICollectionViewDel
     
     //MARK: - Adding image functionality
     @IBAction func onCameraBtn(_ sender: Any) {
+        
         let picker = UIImagePickerController()
         
         if UIImagePickerController.isSourceTypeAvailable(.camera){
