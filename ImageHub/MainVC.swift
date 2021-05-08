@@ -13,7 +13,7 @@ let kMaxPadding: CGFloat = 32
 
 class MainVC : UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
     
-    @IBOutlet weak var libraryCV: UICollectionView!
+    @IBOutlet var libraryCV: UICollectionView!
     
     var cvVertical = true
     var cvPadding: CGFloat = 8.0
@@ -33,6 +33,7 @@ class MainVC : UIViewController, UICollectionViewDataSource, UICollectionViewDel
         super.viewDidLoad()
         updateImages()
     }
+    
     
     //MARK: - Utility
     func updateImages() {

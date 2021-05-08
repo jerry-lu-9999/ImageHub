@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		F562B4E02644DD0300C3D301 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F562B4DF2644DD0300C3D301 /* AppDelegate.swift */; };
 		F562B4E22644DD0300C3D301 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F562B4E12644DD0300C3D301 /* SceneDelegate.swift */; };
-		F562B4E42644DD0300C3D301 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F562B4E32644DD0300C3D301 /* ViewController.swift */; };
 		F562B4E72644DD0300C3D301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F562B4E52644DD0300C3D301 /* Main.storyboard */; };
-		F562B4EA2644DD0300C3D301 /* ImageHub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F562B4E82644DD0300C3D301 /* ImageHub.xcdatamodeld */; };
 		F562B4EC2644DD0600C3D301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F562B4EB2644DD0600C3D301 /* Assets.xcassets */; };
 		F562B4EF2644DD0600C3D301 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F562B4ED2644DD0600C3D301 /* LaunchScreen.storyboard */; };
 		F562B4FA2644DD0700C3D301 /* ImageHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F562B4F92644DD0700C3D301 /* ImageHubTests.swift */; };
@@ -41,12 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F5100A5826461BD4002B4F17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F562B4DC2644DD0300C3D301 /* ImageHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F562B4DF2644DD0300C3D301 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F562B4E12644DD0300C3D301 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F562B4E32644DD0300C3D301 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F562B4E62644DD0300C3D301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F562B4E92644DD0300C3D301 /* ImageHub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageHub.xcdatamodel; sourceTree = "<group>"; };
 		F562B4EB2644DD0600C3D301 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F562B4EE2644DD0600C3D301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F562B4F02644DD0600C3D301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,10 +108,10 @@
 		F562B4DE2644DD0300C3D301 /* ImageHub */ = {
 			isa = PBXGroup;
 			children = (
+				F5100A5826461BD4002B4F17 /* README.md */,
 				F562B4F02644DD0600C3D301 /* Info.plist */,
 				F562B5192645E02F00C3D301 /* SupportingFiles */,
 				F562B5182645E01A00C3D301 /* Model */,
-				F562B4E32644DD0300C3D301 /* ViewController.swift */,
 				F562B4E52644DD0300C3D301 /* Main.storyboard */,
 				F562B51C2645E5B100C3D301 /* PhotoCell.swift */,
 				F562B51A2645E4D700C3D301 /* DetailVC.swift */,
@@ -157,7 +154,6 @@
 			children = (
 				F562B4DF2644DD0300C3D301 /* AppDelegate.swift */,
 				F562B4E12644DD0300C3D301 /* SceneDelegate.swift */,
-				F562B4E82644DD0300C3D301 /* ImageHub.xcdatamodeld */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -292,12 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F562B4E42644DD0300C3D301 /* ViewController.swift in Sources */,
 				F562B51D2645E5B100C3D301 /* PhotoCell.swift in Sources */,
 				F562B5132645B76600C3D301 /* MainVC.swift in Sources */,
 				F562B4E02644DD0300C3D301 /* AppDelegate.swift in Sources */,
 				F562B4E22644DD0300C3D301 /* SceneDelegate.swift in Sources */,
-				F562B4EA2644DD0300C3D301 /* ImageHub.xcdatamodeld in Sources */,
 				F562B51B2645E4D700C3D301 /* DetailVC.swift in Sources */,
 				F562B5172645BA9A00C3D301 /* Collection.swift in Sources */,
 				F562B5152645B90100C3D301 /* Library.swift in Sources */,
@@ -627,19 +621,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		F562B4E82644DD0300C3D301 /* ImageHub.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F562B4E92644DD0300C3D301 /* ImageHub.xcdatamodel */,
-			);
-			currentVersion = F562B4E92644DD0300C3D301 /* ImageHub.xcdatamodel */;
-			path = ImageHub.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F562B4D42644DD0300C3D301 /* Project object */;
 }

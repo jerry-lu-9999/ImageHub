@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 
-class DetailVC : ViewController{
+class DetailVC : UIViewController{
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet var imageView: UIImageView!
     
     var imageTitle: String? {
         willSet{
