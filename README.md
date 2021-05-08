@@ -31,7 +31,8 @@ Simpily press the start button and all should execute well!
 
 The current build pops up the following messages
 
-```ImageHub[34500:1072135] [] nw_protocol_get_quic_image_block_invoke dlopen libquic failed
+```
+ImageHub[34500:1072135] [] nw_protocol_get_quic_image_block_invoke dlopen libquic failed
 ```
 I've encountered this warning multiple times across multiple projects when there are images in play
 
