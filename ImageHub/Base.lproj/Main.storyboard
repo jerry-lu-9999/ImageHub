@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mZo-4t-UtJ">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="l5H-vF-iSx">
                                     <size key="itemSize" width="183" height="129"/>
@@ -67,8 +67,8 @@
                         <constraints>
                             <constraint firstItem="mZo-4t-UtJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Yx-90-2YL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mZo-4t-UtJ" secondAttribute="trailing" id="Nzh-kO-XvY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="mZo-4t-UtJ" secondAttribute="top" constant="88" id="fEr-5T-rxu"/>
-                            <constraint firstItem="mZo-4t-UtJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="83" id="puH-Py-gfg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="mZo-4t-UtJ" secondAttribute="top" id="fEr-5T-rxu"/>
+                            <constraint firstItem="mZo-4t-UtJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="puH-Py-gfg"/>
                         </constraints>
                     </view>
                     <toolbarItems>

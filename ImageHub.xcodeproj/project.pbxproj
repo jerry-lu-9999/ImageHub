@@ -108,6 +108,7 @@
 		F562B4DE2644DD0300C3D301 /* ImageHub */ = {
 			isa = PBXGroup;
 			children = (
+				F562B4ED2644DD0600C3D301 /* LaunchScreen.storyboard */,
 				F562B4E52644DD0300C3D301 /* Main.storyboard */,
 				F5100A5826461BD4002B4F17 /* README.md */,
 				F562B4F02644DD0600C3D301 /* Info.plist */,
@@ -117,7 +118,6 @@
 				F562B51A2645E4D700C3D301 /* DetailVC.swift */,
 				F562B51C2645E5B100C3D301 /* PhotoCell.swift */,
 				F562B4EB2644DD0600C3D301 /* Assets.xcassets */,
-				F562B4ED2644DD0600C3D301 /* LaunchScreen.storyboard */,
 			);
 			path = ImageHub;
 			sourceTree = "<group>";

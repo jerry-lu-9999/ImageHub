@@ -130,6 +130,7 @@ class MainVC : UIViewController, UICollectionViewDataSource, UICollectionViewDel
                     return
             }
             OperationQueue.main.addOperation {
+                print("in will display")
                 if let image = UIImage(data: imgData) {
                     let indexPath = IndexPath(item: index, section: 0)
                     if let cell = collectionView.cellForItem(at: indexPath) as? PhotoCell {
@@ -141,6 +142,7 @@ class MainVC : UIViewController, UICollectionViewDataSource, UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+        print("in did high light")
         if let cell = collectionView.cellForItem(at: indexPath) as? PhotoCell {
             UIView.animate(withDuration: 0.25, animations: {
                 cell.imageView.transform = CGAffineTransform.identity.scaledBy(x: 2.0, y: 2.0)
@@ -149,6 +151,7 @@ class MainVC : UIViewController, UICollectionViewDataSource, UICollectionViewDel
     }
 
     func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
+        print("in did unhightlight")
         if let cell = collectionView.cellForItem(at: indexPath) as? PhotoCell {
            UIView.animate(withDuration: 0.08) {
                 cell.imageView.transform = CGAffineTransform.identity
