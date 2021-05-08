@@ -22,6 +22,11 @@ struct Item: Equatable, Decodable{
     let author: String
     let author_id : String
     let tags: String
+//    let image : Data
+//
+//    private enum CodingKeys: CodingKey{
+//        case title, link, media, published, description, author, author_id, tags
+//    }
 }
 
 struct Collection: Decodable{

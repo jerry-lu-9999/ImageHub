@@ -11,6 +11,8 @@ import UIKit
 let kDefaultSearchTerm = "Eibsee"
 let kFeedsBaseURLString = "https://api.flickr.com/services/feeds/photos_public.gne"
 
+let orange = UIColor(red: 255/255, green: 163/255, blue: 26/255, alpha: 1)
+
 enum ImageResult{
     case Success(Data)
     case Failure(Error)

@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -64,7 +63,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="mZo-4t-UtJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Yx-90-2YL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mZo-4t-UtJ" secondAttribute="trailing" id="Nzh-kO-XvY"/>
@@ -72,14 +71,29 @@
                             <constraint firstItem="mZo-4t-UtJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="83" id="puH-Py-gfg"/>
                         </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="camera" image="camera" catalog="system" id="9xL-4M-h5m">
+                            <connections>
+                                <action selector="onCameraBtn:" destination="BYZ-38-t0r" id="Lz0-Zh-puP"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="kYg-5q-mXb"/>
+                        <barButtonItem title="gallery" image="folder" catalog="system" id="K6D-85-KAW">
+                            <connections>
+                                <action selector="onGalleryBtn:" destination="BYZ-38-t0r" id="PPu-cP-ePh"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" title="ImageHub" largeTitleDisplayMode="always" id="mev-aI-21u"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="libraryCV" destination="mZo-4t-UtJ" id="8ry-Ux-pCl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="955.07246376811599" y="88.392857142857139"/>
+            <point key="canvasLocation" x="953.84615384615381" y="88.151658767772503"/>
         </scene>
         <!--DetailVC-->
         <scene sceneID="iNz-ld-x3p">
@@ -90,11 +104,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RpL-fA-fTx">
-                                <rect key="frame" x="0.0" y="140" width="390" height="621"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dGK-XG-phQ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="RpL-fA-fTx" firstAttribute="top" secondItem="dGK-XG-phQ" secondAttribute="top" id="A8C-fF-gZz"/>
                             <constraint firstItem="dGK-XG-phQ" firstAttribute="bottom" secondItem="RpL-fA-fTx" secondAttribute="bottom" id="jLr-eU-SAW"/>
@@ -116,15 +130,23 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="KP9-sy-ORt" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" largeTitles="YES" id="dgG-sU-NPu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" largeTitles="YES" id="dgG-sU-NPu">
                         <rect key="frame" x="0.0" y="44" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.63921568627450975" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="0.63921568630000003" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Abm-na-QRi">
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Abm-na-QRi">
                         <rect key="frame" x="0.0" y="761" width="390" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hsx-pS-Cgf"/>
@@ -136,8 +158,7 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="camera" catalog="system" width="128" height="94"/>
+        <image name="folder" catalog="system" width="128" height="97"/>
     </resources>
 </document>

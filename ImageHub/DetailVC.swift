@@ -14,7 +14,13 @@ class DetailVC : UIViewController{
     
     var imageTitle: String? {
         willSet{
-            navigationItem.title = newValue
+            let label = UILabel()
+            label.text = newValue
+            label.backgroundColor = .clear
+            label.numberOfLines = 3
+            label.textAlignment = .center
+            label.textColor = orange
+            self.navigationItem.titleView = label
         }
     }
     
